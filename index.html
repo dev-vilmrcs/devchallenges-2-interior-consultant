@@ -1,90 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
-    <script src="https://kit.fontawesome.com/9b8a627eb4.js" crossorigin="anonymous"></script>
-    <title>Interior Consultant</title>
-  </head>
 
-  <body>
-    <main>
-      <div class="container">
-        <nav class="full-nav">
-          <div class="exit-button">
-            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-          </div>
-          <ul class="nav-bar-links-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <script src="https://kit.fontawesome.com/9b8a627eb4.js" crossorigin="anonymous"></script>
+  <title>Interior Consultant</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <nav class="full-nav">
+        <div class="exit-button">
+          <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+        </div>
+        <ul class="nav-bar-links-full">
+          <li><a href="#"> Home </a></li>
+          <li><a href="#"> Collection </a></li>
+          <li><a href="#"> About </a></li>
+          <li><a href="#"> Contact </a></li>
+        </ul>
+      </nav>
+
+      <header>
+        <div class="logo">
+          <a href="#"> THIS INTERIOR</a>
+        </div>
+        <nav class="inline-nav">
+          <ul>
             <li><a href="#"> Home </a></li>
             <li><a href="#"> Collection </a></li>
             <li><a href="#"> About </a></li>
             <li><a href="#"> Contact </a></li>
           </ul>
         </nav>
+        <div class="toggle-menu" id="toggle-menu">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+      </header>
 
-        <header>
-          <div class="logo">
-            <a href="#"> THIS INTERIOR</a>
-          </div>
-          <nav class="inline-nav">
-            <ul>
-              <li><a href="#"> Home </a></li>
-              <li><a href="#"> Collection </a></li>
-              <li><a href="#"> About </a></li>
-              <li><a href="#"> Contact </a></li>
-            </ul>
-          </nav>
-          <div class="toggle-menu" id="toggle-menu">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-          </div>
-        </header>
-
-        <div class="content">
-          <div class="interior-desc">
-            <h1>Modern interior</h1>
-            <p>A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
-            <button>Read More <i class="fas fa-long-arrow-alt-right"></i></button>
-          </div>
-
-          <div class="interior-layouts">
-            <div class="img-container">
-              <img src="photo1.png" alt="" />
-            </div>
-            <div class="card">
-              <div class="interior-profile">
-                <div class="img-thumbnail">
-                  <img src="photo2.png" alt="" />
-                </div>
-                <div class="profile-description">
-                  <h3>Aliza Webber</h3>
-                  <p>Interior designer</p>
-                </div>
-              </div>
-              <h2>Designed in 2020 by Aliza Webber</h2>
-            </div>
-          </div>
+      <div class="content">
+        <div class="interior-desc">
+          <h1>Modern interior</h1>
+          <p>A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+          <button>Read More <i class="fas fa-long-arrow-alt-right"></i></button>
         </div>
 
-        <footer>
-          <p>dev-vilmrcs@devchallenges.io</p>
-        </footer>
+        <div class="interior-layouts">
+          <div class="img-container">
+            <!-- <img src="photo1.png" alt="" /> -->
+          </div>
+          <div class="card">
+            <div class="interior-profile">
+              <div class="img-thumbnail">
+                <img src="photo2.png" alt="" />
+              </div>
+              <div class="profile-description">
+                <h3>Aliza Webber</h3>
+                <p>Interior designer</p>
+              </div>
+            </div>
+            <h2>Designed in 2020 by Aliza Webber</h2>
+          </div>
+        </div>
       </div>
-    </main>
-  </body>
 
-  <script>
-    var toggleMenu = document.querySelector('#toggle-menu');
-    var fullNav = document.querySelector('.full-nav');
-    var exitButton = document.querySelector('.exit-button');
+      <footer>
+        <p>dev-vilmrcs@devchallenges.io</p>
+      </footer>
+    </div>
+  </main>
+</body>
 
-    toggleMenu.addEventListener('click', function () {
-      fullNav.style.display = 'flex';
-    });
+<script>
+  var toggleMenu = document.querySelector('#toggle-menu');
+  var fullNav = document.querySelector('.full-nav');
+  var exitButton = document.querySelector('.exit-button');
 
-    exitButton.addEventListener('click', function () {
-      fullNav.style.display = 'none';
-    });
-  </script>
+  toggleMenu.addEventListener('click', function() {
+    fullNav.style.display = 'flex';
+  });
+
+  exitButton.addEventListener('click', function() {
+    fullNav.style.display = 'none';
+  });
+</script>
+
 </html>

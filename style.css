@@ -39,9 +39,9 @@ main {
 }
 
 .container {
+  /* height: 100%; */
   padding: 1rem;
   margin: auto;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -71,39 +71,37 @@ header {
   font-size: 2.5rem;
 }
 
-
 /*  NAV FULL */
 .full-nav {
-    font-family: var(--montserrat-font-family);
-    background-color: #181719;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: none;
-    opacity: 0.9;
-  }
-  
-  .exit-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 0.5rem;
-  }
-  
-  .nav-bar-links-full {
-    font-size: 2rem;
-  }
-  
-  .nav-bar-links-full li a {
-    display: inline-block;
-    padding: 1rem;
-  }
+  font-family: var(--montserrat-font-family);
+  background-color: #181719;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  opacity: 0.9;
+}
 
-  
-  /* HEADERS */
+.exit-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5rem;
+}
+
+.nav-bar-links-full {
+  font-size: 2rem;
+}
+
+.nav-bar-links-full li a {
+  display: inline-block;
+  padding: 1rem;
+}
+
+/* HEADERS */
 
 .interior-desc {
   margin: 1rem 0;
@@ -144,9 +142,8 @@ header {
 
 .interior-layouts {
   min-height: 21rem;
-  position: relative;
+  /* position: relative; */
 }
-
 
 .card {
   width: 17rem;
@@ -155,9 +152,16 @@ header {
   padding: 0.5rem 1rem;
   background-color: #000;
   margin: 0 auto;
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
-  right: 5%;
+  right: 5%; */
+  margin-top: -60px;
+}
+
+.img-container {
+  width: 100%;
+  height: 326px;
+  background: url('photo1.png') no-repeat  center center/cover;
 }
 
 .interior-profile {
