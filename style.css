@@ -131,6 +131,7 @@ header {
   color: white;
   cursor: pointer;
   margin: 1rem 0;
+  padding: 0.3rem 0.5rem;
 }
 
 .fas {
