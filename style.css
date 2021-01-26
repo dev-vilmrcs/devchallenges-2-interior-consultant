@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora&family=Montserrat:wght@100;200;400;600&display=swap');
+:root {
+  --crimson-font-family: 'Crimson Pro', serif;
+  --lora-font-family: 'Lora', serif;
+  --montserrat-font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #181719;
+  color: #fff;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+  height: 100vh;
+}
+
+.container {
+  padding: 1rem;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inline-nav {
+  display: none;
+}
+
+header {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle-menu {
+  cursor: pointer;
+}
+
+.logo {
+  font-family: var(--crimson-font-family);
+  padding: 0.7rem;
+  border: 1px solid #fff;
+}
+
+.toggle-menu i {
+  font-size: 2.5rem;
+}
+
+
+/*  NAV FULL */
+.full-nav {
+    font-family: var(--montserrat-font-family);
+    background-color: #181719;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    opacity: 0.9;
+  }
+  
+  .exit-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.5rem;
+  }
+  
+  .nav-bar-links-full {
+    font-size: 2rem;
+  }
+  
+  .nav-bar-links-full li a {
+    display: inline-block;
+    padding: 1rem;
+  }
+
+  
+  /* HEADERS */
+
+.interior-desc {
+  margin: 1rem 0;
+}
+
+.interior-desc h1 {
+  font-family: var(--lora-font-family);
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.interior-desc p {
+  font-family: var(--montserrat-font-family);
+  font-weight: 300;
+  width: 70%;
+  margin: 1rem 0;
+}
+
+.interior-desc button {
+  font-family: var(--montserrat-font-family);
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.fas {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+/* INTERIOR LAYOUT */
+
+.interior-layouts {
+  min-height: 21rem;
+  position: relative;
+}
+
+
+.card {
+  width: 17rem;
+  border-radius: 10px;
+  box-shadow: 10px 10px 7px -1px rgba(0, 0, 0, 0.75);
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+}
+
+.interior-profile {
+  display: flex;
+  align-items: center;
+}
+
+.img-thumbnail {
+  width: 3rem;
+  height: 3rem;
+}
+
+.img-thumbnail img {
+  border-radius: 50%;
+}
+
+.profile-description {
+  margin-left: 1rem;
+}
+
+.profile-description h3 {
+  font-weight: 500;
+}
+
+.profile-description p {
+  color: #828282;
+  font-weight: normal;
+}
+
+.card > h2 {
+  width: 80%;
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+
+footer {
+  text-align: center;
+  margin: 1rem 0;
+  border-top: 1px solid #fff;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin-top: 1rem;
+}
